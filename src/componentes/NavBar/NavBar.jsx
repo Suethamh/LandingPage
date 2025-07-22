@@ -3,7 +3,7 @@ import styles from "./NavBar.module.css"
 
 function NavBar() {
     return (
-        <nav>
+        <nav className={styles.teste}>
             <a href="#header">Home</a>
             <a href="#sobre">Sobre Mim</a>
             <a href="#trabalho">Meu Trabalho</a>
