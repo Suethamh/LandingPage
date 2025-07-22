@@ -60,23 +60,42 @@
 }
 
 .sobreMim > div:nth-of-type(2) > div > div {
-    background: var(--gradiente-vermelho);
+    position: relative;
     border-radius: 50%;
     text-align: center;
     width: 80px;
     height: 80px;
     padding: 18px;
+    background: linear-gradient(90deg, rgba(78, 6, 6, 0.9), rgba(111, 7, 7, 0.9));
+    overflow: visible;
 }
 
+.sobreMim > div:nth-of-type(2) > div > div::before {
+    content: "";
+    position: absolute;
+    top: -24%;
+    left: -30%;
+    width: 160%;
+    height: 160%;
+
+    background-image: url("../../assets/sobreMim/folhasLouroPreta.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+.sobreMim > div:nth-of-type(2) > div > div > * {
+    position: relative;
+    z-index: 1;
+}
 .sobreMim > div:nth-of-type(2) > div > div > img {
     aspect-ratio: 1/1;
     height: 80%;
     filter: invert(1);
     margin-top: 2px;
-    background-image: url("../../assets/sobreMim/folhasLouroPreta.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .sobreMim > div:nth-of-type(2) > div:nth-of-type(1) > div > img {
