@@ -1,0 +1,218 @@
+.fotoJoao {
+    border-radius: 30px;
+    width: 100%;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.25);
+}
+
+.sobreMim > div:first-of-type {
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 80%;
+    max-width: 1200px;
+    font-size: clamp(0.6rem, 0.8vw, 1rem);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobreMim > div:first-of-type > div:nth-of-type(2) > span {
+    font-size: clamp(1.5rem, 2.4vw, 2.8rem);
+    color: #007de3;
+    margin-top: -30px;
+}
+
+.sobreMim > div:first-of-type > div:nth-of-type(2) > span,
+.sobreMim > div:first-of-type > div:nth-of-type(2) > p > span {
+    font-weight: bold;
+}
+
+.sobreMim > div:first-of-type > div:nth-of-type(2) > h3 {
+    font-size: clamp(1rem, 1.4vw, 2rem);
+    margin-bottom: 0px;
+}
+
+.sobreMim > div:first-of-type > div:first-of-type {
+    width: 30%;
+    position: relative;
+}
+
+.sobreMim > div:first-of-type > div:nth-of-type(2) {
+    width: 55%;
+}
+
+.sobreMim > div:first-of-type > div:nth-of-type(2) > p {
+    font-size: clamp(0.8rem, 1vw, 1.4rem);
+    margin: 20px 10px;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+.sobreMim > div:nth-of-type(2) {
+    width: 80%;
+    max-width: 800px;
+}
+
+.sobreMim > div:nth-of-type(2) > div {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.sobreMim > div:nth-of-type(2) > div > div {
+    background: var(--gradiente-vermelho);
+    border-radius: 50%;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    padding: 18px;
+}
+
+.sobreMim > div:nth-of-type(2) > div > div > img {
+    aspect-ratio: 1/1;
+    height: 80%;
+    filter: invert(1);
+    margin-top: 2px;
+    background-image: url("../../assets/sobreMim/folhasLouroPreta.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sobreMim > div:nth-of-type(2) > div:nth-of-type(1) > div > img {
+    margin-top: 4px;
+}
+
+.sobreMim > div:nth-of-type(2) > div:nth-of-type(2) > div > img {
+    margin-left: 2px;
+}
+
+.sobreMim > div:nth-of-type(2) > div:nth-of-type(3) > div > img {
+    margin-top: 4px;
+}
+
+.sobreMim > div:nth-of-type(2) > div > span {
+    color: black;
+    font-weight: 900;
+    font-size: clamp(1.2rem, 1.8vw, 2.2rem);
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .sobreMim > div:first-of-type {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .sobreMim > div:first-of-type > div:first-of-type {
+    width: 60%;
+  }
+
+  .sobreMim > div:first-of-type > div:nth-of-type(2) {
+    width: 100%;
+  }
+
+  .sobreMim > div:first-of-type > div:nth-of-type(2) > span {
+    font-size: 2.2rem;
+  }
+
+  .sobreMim > div:first-of-type > div:nth-of-type(2) > h3 {
+    font-size: 1.4rem;
+  }
+
+  .sobreMim > div:first-of-type > div:nth-of-type(2) > p {
+    font-size: 1rem;
+    margin: 10px;
+    line-height: 1.5;
+  }
+
+  .sobreMim > div:nth-of-type(2) {
+    width: 90%;
+  }
+
+  .sobreMim > div:nth-of-type(2){
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sobreMim > div:nth-of-type(2) > div > div {
+    width: 70px;
+    height: 70px;
+    padding: 14px;
+  }
+
+  .sobreMim > div:nth-of-type(2) > div > span {
+    font-size: 1.4rem;
+  }
+  
+  .sobreMim .fotoJoao {
+    width: 70%;
+  }
+}
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+
+  .sobreMim > div:first-of-type {
+    flex-direction: column;
+    gap: 16px;
+    font-size: 0.95rem;
+    width: 95%;
+  }
+
+  .sobreMim > div:first-of-type > div:first-of-type {
+    width: 90%;
+  }
+
+  .fotoJoao {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .sobreMim > div:first-of-type > div:nth-of-type(2) {
+    width: 100%;
+  }
+
+  .sobreMim > div:first-of-type > div:nth-of-type(2) > span {
+    font-size: 1.8rem;
+  }
+
+  .sobreMim > div:first-of-type > div:nth-of-type(2) > h3 {
+    font-size: 1.2rem;
+  }
+
+  .sobreMim > div:first-of-type > div:nth-of-type(2) > p {
+    font-size: 0.95rem;
+    margin: 8px;
+    line-height: 1.4;
+    text-align: justify;
+  }
+
+  .sobreMim > div:nth-of-type(2) {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sobreMim > div:nth-of-type(2) > div {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .sobreMim > div:nth-of-type(2) > div > div {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+  }
+
+  .sobreMim > div:nth-of-type(2) > div > span {
+    font-size: 1.2rem;
+  }
+}
+
+
+

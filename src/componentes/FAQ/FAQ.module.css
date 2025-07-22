@@ -1,0 +1,153 @@
+.secaoFaq {
+  background: var(--gradiente-azul-vertical);
+}
+
+.screenContainer {
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #b30000 #041e318E;
+}
+
+/* WebKit (Chrome, Safari, Edge) */
+.screenContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.screenContainer::-webkit-scrollbar-track {
+  background: #041e31;
+  border-radius: 10px;
+}
+
+.screenContainer::-webkit-scrollbar-thumb {
+  background-color: #b30000;
+  border-radius: 10px;
+  border: 2px solid #041e31; /* "padding" interno da thumb */
+}
+
+.screenContainer::-webkit-scrollbar-thumb:hover {
+  background-color: #ff3333;
+}
+
+.conteudo {
+  flex-grow: 1;
+  overflow-y: auto;
+  font-size: 20px;
+  padding: 0 10px;
+  color: white;
+  user-select: none;
+}
+
+.conteudo > details {
+  transition: all .2s;
+}
+
+.conteudo > details:hover {
+  transform: scale(1.02);
+}
+
+.conteudo summary {
+  list-style: none;
+  font-weight: bold;
+  background: var(--gradiente-vermelho);
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.conteudo p {
+  padding: 0 10px 10px 10px;
+  background: var(--gradiente-vermelho);
+  margin-bottom: 5px;
+  margin-top: -7px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.secaoFaq .conteudo details[open] {
+    animation: slideDown 1s ease-out;
+    overflow: hidden; 
+}
+
+@keyframes slideDown {
+    from {
+        max-height: 60px;
+    }
+    to {
+        max-height: 500px; 
+    }
+}
+
+.secaoFaq .conteudo details.collapsing {
+    animation: slideUp 1s ease-out;
+    overflow: hidden;
+}
+
+@keyframes slideUp {
+    from {
+        max-height: 500px; 
+    }
+    to {
+        max-height: 60px;
+    }
+}
+
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .screenContainer {
+    width: 90%;
+    height: 400px;
+    padding: 10px 0;
+  }
+
+  .conteudo {
+    font-size: 18px;
+    padding: 0 8px;
+  }
+
+  .conteudo summary {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .conteudo p {
+    font-size: 0.95rem;
+    padding: 0 10px 10px 10px;
+  }
+}
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+  .screenContainer {
+    width: 95%;
+    height: 550px;
+    padding: 10px;
+  }
+
+  .screenContainer h2 {
+    text-align: center;
+  }
+
+  .conteudo {
+    font-size: 15px;
+    padding: 0 5px;
+  }
+
+  .conteudo summary {
+    font-size: 1.25rem;
+    padding: 10px;
+  }
+
+  .conteudo p {
+    font-size: 0.9rem;
+    padding: 0 10px 10px 10px;
+  }
+}

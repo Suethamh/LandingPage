@@ -1,0 +1,9 @@
+footer {
+    background-color: #0C0C0C;
+    color: white;
+    padding: 50px;
+}
+
+.footer p:last-child {
+    margin-top: 50px;
+}

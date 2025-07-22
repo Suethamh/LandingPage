@@ -1,0 +1,60 @@
+.texto {
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    background: var(--gradiente-azul);
+    background-size: 400% 400%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    transition: all .2s;
+    border: 3px solid #2f87d07C;
+    font-size: 1.5em;
+}
+
+.texto > span {
+    margin-left: 5px;
+}
+
+.texto:hover {
+    transform: scale(1.1);
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+    .texto {
+        font-size: 1.3em;
+        padding: 12px 18px;
+    }
+}
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+    .texto {
+        font-size: 2em;
+        padding: 15px 25px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .texto > span {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}

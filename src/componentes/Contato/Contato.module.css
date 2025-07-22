@@ -1,0 +1,194 @@
+.contato {
+    position: relative;
+    background: linear-gradient(90deg, #4E0606 0%, #6F0707 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: white;
+    box-shadow: 0px -10px 20px 5px rgba(0, 0, 0, 0.25);
+}
+
+.contato::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../assets/Contato/pessoasFelizes2.jpg") no-repeat center center;
+    background-size: cover;
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.contato > div {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.contato > div > div {
+    width: 50%;
+    text-align: center;
+}
+
+.contato > div > div:first-of-type img {
+    width: 30%;
+    transition: all .5s;
+}
+
+.contato > div > div:first-of-type img:hover {
+    transform: scale(1.1);
+}
+
+
+.contato > div > div:nth-of-type(2) {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contato > div > div:nth-of-type(2) span {
+    font-size: clamp(2rem, 6vw, 5rem);
+    font-weight: bolder;
+}
+.contato > div > div:nth-of-type(3) > form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.contato > div > div:nth-of-type(3) > form > input {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid rgba(219, 227, 230, 0.20);
+    background: rgba(190, 193, 196);
+    height: 30px;
+}
+
+.contato > div > div:nth-of-type(3) > form > input:last-of-type {
+    padding: 10px;
+    height: auto;
+    width: 50%;
+    margin: auto;
+    font-size: 1em;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    background: rgba(190, 193, 196, 0.33);
+}
+
+.contato > div > div:nth-of-type(3) > form > input:last-of-type:hover {
+    transition: all 0.5s;
+    transform: scale(1.1); 
+    background-color: rgb(0, 0, 0);
+
+}
+
+.contato > div > div:nth-of-type(3) > form > textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid rgba(219, 227, 230, 0.20);
+    background: rgba(190, 193, 196);
+    height: 100px;
+    margin-bottom: 30px;
+    scrollbar-width: thin;               /* Firefox */
+    scrollbar-color: #b30000 #f1f1f1;    /* Firefox */
+}
+
+/* Chrome, Edge, Safari */
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #b30000;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #ff3333;
+}
+.contato > div > div:nth-of-type(3) > form > p {
+    margin-top: 20px;
+}
+
+/* Tablets (entre 601px e 1024px) */
+@media (max-width: 1024px) {
+    .contato > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato > div > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contato > div > div:first-of-type img {
+        width: 20%;
+    }
+
+    .contato > div > div:nth-of-type(2) {
+        width: 100%;
+    }
+
+    .contato > div > div:nth-of-type(2) span {
+        font-size: clamp(2rem, 10vw, 4rem);
+    }
+
+    .contato > div > div:nth-of-type(3) > form {
+        width: 90%;
+    }
+
+    .contato > div > div:nth-of-type(3) > form > input:last-of-type {
+        width: 70%;
+    }
+
+}
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+    .contato > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato > div > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contato > div > div:first-of-type img {
+        width: 30%;
+    }
+
+    .contato > div > div:nth-of-type(2) span {
+        font-size: clamp(1.5rem, 12vw, 3rem);
+    }
+
+    .contato > div > div:nth-of-type(3) > form {
+        width: 95%;
+    }
+
+    .contato > div > div:nth-of-type(3) > form > input {
+        height: 40px;
+    }
+
+    .contato > div > div:nth-of-type(3) > form > textarea {
+        height: 120px;
+    }
+
+    .contato > div > div:nth-of-type(3) > form > input:last-of-type {
+        width: 80%;
+        font-size: 1.1em;
+    }
+}

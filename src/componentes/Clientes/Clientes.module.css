@@ -1,0 +1,215 @@
+.swiper {
+    width: 80%;
+    max-width: 1500px;
+    margin-bottom: 50px;
+    mask-image: linear-gradient(90deg, transparent 0%, white 15%, white 85%, transparent 100%);
+    height: 500px;
+}
+
+.card {
+    border: 5px solid #034072;
+    border-radius: 16px;
+    padding: 20px 24px;
+    color: black;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    cursor: grab;
+    height: 100%;
+}
+
+.card div {
+    margin: 0;
+    gap: 6px;
+}
+
+.clienteInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.clienteInfo p {
+    margin: 0;
+}
+
+.clienteInfo > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: clamp(1rem, 1.3vw, 1.6rem);
+    color: black;
+}
+
+.clienteInfo > div > img {
+    height: 30px;
+    width: 30px;
+}
+
+.clienteInfo > div:first-of-type > img:first-of-type {
+    filter: invert(0);
+}
+
+.clienteInfo > div:nth-of-type(2) > img:first-of-type {
+    filter: invert(0);
+}
+
+.clienteCitacao {
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.clienteCitacao > div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.clienteCitacao > div > p {
+    margin-top: 0;
+}
+
+.clienteCitacao img {
+    height: 20px;
+    filter: invert(0);
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+}
+
+.swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.swiper-pagination-bullet-active {
+    background: white;
+}
+
+@media (max-width: 1024px) {
+  .swiper {
+    width: 95%;
+    height: auto;
+    mask-image: none;
+    padding-bottom: 50px;
+  }
+
+  .card {
+    padding: 20px;
+    border-width: 4px;
+    min-height: 420px; /* aumenta o espaço vertical da caixa */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .clienteInfo {
+    margin-bottom: 12px;
+  }
+
+  .clienteInfo > div {
+    font-size: 1rem;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .clienteCitacao {
+    font-size: 1rem;
+    line-height: 1.6;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .clienteCitacao > div {
+    margin-top: 16px;
+  }
+
+  .clienteCitacao img {
+    height: 20px;
+    margin-top: 6px;
+  }
+}
+
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+  .swiper {
+    width: 90%;
+    height: auto;
+    padding: 0 10px 60px 10px;
+    mask-image: none;
+  }
+
+  .card {
+    padding: 30px;
+    border-width: 3px;
+    min-height: 350px; /* aumenta a altura para caber depoimentos longos */
+  }
+
+  .clienteInfo {
+    margin-bottom: 10px;
+  }
+
+  .clienteInfo > div {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .clienteInfo > div > p {
+    font-size: 1.11rem;
+  }
+
+  .clienteInfo > div:nth-of-type(1) > img {
+    height: auto;
+    width: 35px;
+  }
+
+  .clienteInfo > div:nth-of-type(2) > img {
+    height: auto;
+    width: 35px;
+    aspect-ratio: 1/1;
+  }
+
+  .clienteCitacao {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 30px;
+  }
+
+  .clienteCitacao > div {
+    margin-top: 16px;
+    gap: 4px;
+  }
+
+  .clienteCitacao img {
+    height: 18px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important; /* garante que as setas sumam mesmo com Swiper ativo */
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: white;
+  }
+}
