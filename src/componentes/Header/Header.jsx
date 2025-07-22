@@ -10,8 +10,8 @@ function Header() {
     }
 
     return (
-        <header className={styles.headerPrincipal}>
-            <div id="header">
+        <header className={styles.headerPrincipal} id="header">
+            <div>
                 <Titulosubtitulo titulo={data.titulo} subtitulo={data.subtitulo} />
                 <CallToAction/>
             </div>

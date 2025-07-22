@@ -1,4 +1,4 @@
-import "./TituloSubtitulo.module.css"
+import styles from "./TituloSubtitulo.module.css"
 
 function Titulosubtitulo(props) {
     return (

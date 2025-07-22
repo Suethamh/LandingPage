@@ -2,6 +2,7 @@ nav {
     background: var(--gradiente-azul);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav a {
@@ -15,8 +16,11 @@ nav a {
     transform .5s;
 }
 
-.teste {
-  height: 80px;
+.logoPsicologia {
+  justify-self: left;
+  width: 40px;
+  height: 40px;
+  filter: saturate(0);
 }
 
 nav a:hover {
