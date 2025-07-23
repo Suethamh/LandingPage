@@ -63,7 +63,7 @@ function Contato() {
                         </span>
                     </div>
                     <div>
-                        <Titulosubtitulo subtitulo="Vamos nos tornar melhor, juntos!"/>
+                        <Titulosubtitulo subtitulo="Me mande um email!"/>
                         <form action="">
                             <label htmlFor="nome">Nome Completo:</label>
                             <input type="text" name="nome" id="nome" onChange={(e) => handleChange(e)} value={usuarioIn.nome}/>
@@ -77,6 +77,8 @@ function Contato() {
                             <input className={style.botao} type="submit" value="Enviar email" onClick={(e) => mostrarValor(e)}/>
                             <p>{msgEnvio}</p>
                         </form>
+
+                        <Titulosubtitulo subtitulo="Vamos nos tornar melhores, juntos!"/>
                     </div>
                 </div>
             </section>

@@ -27,7 +27,7 @@
 .screenContainer::-webkit-scrollbar-thumb {
   background-color: #b30000;
   border-radius: 10px;
-  border: 2px solid #041e31; /* "padding" interno da thumb */
+  border: 2px solid #041e31;
 }
 
 .screenContainer::-webkit-scrollbar-thumb:hover {
@@ -69,6 +69,8 @@
   margin-top: -7px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  color: #ffffffC1;
+  font-size: .8vw;
 }
 
 .secaoFaq .conteudo details[open] {

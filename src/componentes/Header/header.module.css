@@ -76,6 +76,10 @@
 /* Celulares (até 600px) */
 @media (max-width: 600px) {
     .headerPrincipal {
+        background-image:
+        linear-gradient(rgba(0, 20, 50, 0.7), rgba(0, 20, 50, 0.5)),
+        url("../../assets/header/escritorio.jpg");
+
         flex-direction: column;
         aspect-ratio: auto;
         background-size: cover;
@@ -92,7 +96,7 @@
         width: 95%;
         padding: 20px;
         margin-right: 0;
-        background: rgba(255, 255, 255, 0.6);
+        background: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
         border-radius: 20px;

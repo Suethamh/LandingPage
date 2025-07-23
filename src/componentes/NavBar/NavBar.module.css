@@ -1,11 +1,17 @@
 nav {
     background: var(--gradiente-azul);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 10px;
 }
 
-nav a {
+nav > div:first-of-type {
+  margin: 0 20px;
+}
+
+nav > div > a {
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -17,13 +23,13 @@ nav a {
 }
 
 .logoPsicologia {
-  justify-self: left;
-  width: 40px;
-  height: 40px;
-  filter: saturate(0);
+    justify-self: left;
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1);
 }
 
-nav a:hover {
+nav > div > a:hover {
     border-bottom: 3px solid white;
     transform: scale(1.1);
 }
@@ -35,7 +41,7 @@ nav a:hover {
     padding: 15px 10px;
   }
 
-  nav a {
+  nav div a {
     margin: 2vw;
     font-size: 1rem;
   }
@@ -49,7 +55,17 @@ nav a:hover {
     padding: 20px 0;
   }
 
-  nav a {
+  nav > div {
+    text-align: center;
+    width: 80%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav div a {
+    display: inline-block;
+    width: 100%;
     margin: 10px 0;
     font-size: 1.1rem;
   }

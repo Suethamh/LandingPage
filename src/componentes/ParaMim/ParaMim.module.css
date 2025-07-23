@@ -43,6 +43,7 @@
     text-align: left;
     border-radius: 20px;
     padding: 20px;
+    transition: all .4s ease;
 }
 
 .paraMim .container > div:nth-child(3) > details > a{
@@ -61,6 +62,20 @@
 .paraMim .container > div:nth-child(3) {
     background-color: #084D885E;
 }
+
+.paraMim .container > div:first-of-type:hover,
+.paraMim .container > div:last-of-type:hover {
+    transform: scale(1.05);
+    box-shadow: black 10 10 10;
+}
+.paraMim .container > div:nth-child(1):hover {
+    background-color: #7E03039E;
+}
+
+.paraMim .container > div:nth-child(3):hover {
+    background-color: #084D889E;
+}
+
 
 .paraMim .container > div:nth-child(3) p {
     font-style: italic;
@@ -96,7 +111,6 @@
     font-size: clamp(1rem, .9vw, 2rem);
     transition: all 0.3s ease;
 }
-
 .paraMim summary::marker {
     display: none;
 }
@@ -108,7 +122,6 @@
     font-size: 30px;
     font-weight: bolder;
 }
-
 
 .paraMim details[open] summary span {
     transform: rotate(90deg);
@@ -135,8 +148,22 @@
     gap: 20px;
     font-size: clamp(1rem, 3vw, 6rem);
     font-weight: bolder;
-    background: linear-gradient(90deg, #1E65A2 24.04%, #0E71C7 50%, #0B6BBD 83.65%);
-    border-radius: 30px;
+    background: linear-gradient(90deg, #1E65A2 10%, #4193db 50%, #0B6BBD 90%);
+    border-radius: 25px;
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .paraMim .container > div:nth-child(2) a img {
@@ -145,114 +172,6 @@
 
 .paraMim .container > div:nth-of-type(1) {
     margin-bottom: 5px;
-}
-
-/* Tablets (até 1024px) */
-@media (max-width: 1024px) {
-  .sobreMim > div:first-of-type {
-    flex-direction: column;
-    gap: 20px;
-    font-size: 1rem;
-    width: 90%;
-  }
-
-  .sobreMim > div:first-of-type > div:first-of-type {
-    width: 60%;
-  }
-
-  .sobreMim > div:first-of-type > div:nth-of-type(2) {
-    width: 100%;
-  }
-
-  .sobreMim > div:first-of-type > div:nth-of-type(2) > span {
-    font-size: 2.2rem;
-  }
-
-  .sobreMim > div:first-of-type > div:nth-of-type(2) > h3 {
-    font-size: 1.4rem;
-  }
-
-  .sobreMim > div:first-of-type > div:nth-of-type(2) > p {
-    font-size: 1rem;
-    margin: 10px;
-    line-height: 1.5;
-  }
-
-  .sobreMim > div:nth-of-type(2) {
-    width: 90%;
-  }
-
-  .sobreMim > div:nth-of-type(2) > div > div {
-    width: 70px;
-    height: 70px;
-    padding: 14px;
-  }
-
-  .sobreMim > div:nth-of-type(2) > div > span {
-    font-size: 1.4rem;
-  }
-  
-  .sobreMim .fotoJoao {
-    width: 70%;
-  }
-}
-
-/* Celulares (até 600px) */
-@media (max-width: 600px) {
-
-  .sobreMim > div:first-of-type {
-    flex-direction: column;
-    gap: 16px;
-    font-size: 0.95rem;
-    width: 95%;
-  }
-
-  .sobreMim > div:first-of-type > div:first-of-type {
-    width: 90%;
-  }
-
-  .fotoJoao {
-    width: 100%;
-    border-radius: 20px;
-  }
-
-  .sobreMim > div:first-of-type > div:nth-of-type(2) {
-    width: 100%;
-  }
-
-  .sobreMim > div:first-of-type > div:nth-of-type(2) > span {
-    font-size: 1.8rem;
-  }
-
-  .sobreMim > div:first-of-type > div:nth-of-type(2) > h3 {
-    font-size: 1.2rem;
-  }
-
-  .sobreMim > div:first-of-type > div:nth-of-type(2) > p {
-    font-size: 0.95rem;
-    margin: 8px;
-    line-height: 1.4;
-    text-align: justify;
-  }
-
-  .sobreMim > div:nth-of-type(2) {
-    width: 95%;
-  }
-
-  .sobreMim > div:nth-of-type(2) > div {
-    padding: 0;
-    margin-bottom: 10px;
-  }
-
-  .sobreMim > div:nth-of-type(2) > div > div {
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-  }
-
-  .sobreMim > div:nth-of-type(2) > div > span {
-    font-size: 1.2rem;
-  }
 }
 
 /* Tablets (até 1024px) */
@@ -285,7 +204,8 @@
   }
 
   .paraMim .container > div:nth-child(2) a {
-    font-size: 1.5rem;
+    font-size: 3rem;
+    width: 60%;
     padding: 10px;
   }
 
@@ -332,7 +252,7 @@
   }
 
   .paraMim .container > div:nth-child(2) a {
-    font-size: 1.3rem;
+    font-size: 3rem;
     padding: 10px 20px;
     width: fit-content;
     display: flex;

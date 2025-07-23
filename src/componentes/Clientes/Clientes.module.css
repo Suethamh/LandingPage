@@ -4,6 +4,11 @@
     margin-bottom: 50px;
     mask-image: linear-gradient(90deg, transparent 0%, white 15%, white 85%, transparent 100%);
     height: 500px;
+    overflow: visible;
+}
+
+.swiper div {
+    overflow: visible;
 }
 
 .card {
@@ -106,7 +111,7 @@
   .card {
     padding: 20px;
     border-width: 4px;
-    min-height: 420px; /* aumenta o espaço vertical da caixa */
+    min-height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -154,7 +159,6 @@
   .card {
     padding: 30px;
     border-width: 3px;
-    min-height: 350px; /* aumenta a altura para caber depoimentos longos */
   }
 
   .clienteInfo {

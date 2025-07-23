@@ -10,22 +10,22 @@
 
 /* Tablets (até 1024px) */
 @media (max-width: 1024px) {
-    h2 {
+    .titulo {
         font-size: 2rem; /* Aproximadamente 32px */
     }
 
-    h3 {
+    .subtitulo {
         font-size: 1.2rem; /* Aproximadamente 19px */
     }
 }
 
 /* Celulares (até 600px) */
 @media (max-width: 600px) {
-    h2 {
-        font-size: 1.7rem; /* Aproximadamente 27px */
+    .titulo {
+        font-size: 2rem; /* Aproximadamente 27px */
     }
 
-    h3 {
-        font-size: 1rem; /* Aproximadamente 16px */
+    .subtitulo {
+        font-size: 1.3rem; /* Aproximadamente 16px */
     }
 }

@@ -7,7 +7,7 @@ function Wpp() {
             <FloatingWhatsApp
                         phoneNumber="+5531992397353"
                         accountName="João Vítor Scofield"
-                        chatMessage="Comece sua jornada de bem-estar. Converse comigo no WhatsApp!"
+                        chatMessage="Comece sua jornada de bem-estar. Me mande uma mensagem!"
                         statusMessage="disponível"
                         placeholder="Digite a sua mensagem"
                         avatar={joao}
