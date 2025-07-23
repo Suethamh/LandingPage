@@ -24,7 +24,7 @@ function SobreMim() {
                 <div>
                     <div>
                         {/* <img src={folha} alt="Essa imagem ainda é um teste talvez a gente não use." /> */} 
-                        <img src={fotoJoao} alt="" className={style.fotoJoao} />
+                        <img src={fotoJoao} alt="Imagem selfie de João Vitor Scofield" className={style.fotoJoao} />
                         <p>João Vítor Oliveira Scofield Souza <br/>CRP: 04/62.100</p>
                     </div>
                     
