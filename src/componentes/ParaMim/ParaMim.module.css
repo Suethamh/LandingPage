@@ -143,10 +143,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: auto;
     margin: auto;
     gap: 20px;
-    font-size: clamp(1rem, 3vw, 6rem);
+    font-size: clamp(.5rem, 2.6vw, 6rem);
     font-weight: bolder;
     background: linear-gradient(90deg, #1E65A2 10%, #4193db 50%, #0B6BBD 90%);
     border-radius: 25px;
@@ -204,8 +204,8 @@
   }
 
   .paraMim .container > div:nth-child(2) a {
-    font-size: 3rem;
-    width: 60%;
+    font-size: clamp(.5rem, 8vw, 6rem);
+    width: 100%;
     padding: 10px;
   }
 
@@ -252,7 +252,7 @@
   }
 
   .paraMim .container > div:nth-child(2) a {
-    font-size: 3rem;
+    font-size: clamp(.2rem, 9vw, 6rem);
     padding: 10px 20px;
     width: fit-content;
     display: flex;
